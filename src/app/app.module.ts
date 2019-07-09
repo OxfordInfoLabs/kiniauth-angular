@@ -32,7 +32,8 @@ import { NgKiniAuthModule } from 'ng-kiniauth';
         MatToolbarModule,
         MatButtonModule,
         NgKiniAuthModule.forRoot({
-            httpURL: 'http://localhost:5000'
+            guestHttpURL: 'http://localhost:5000/guest',
+            accessHttpURL: 'http://localhost:5000/customer'
         })
     ],
     providers: [
